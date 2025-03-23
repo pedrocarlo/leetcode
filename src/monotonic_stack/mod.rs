@@ -1,1 +1,2 @@
 mod next_greater_element;
+mod most_competitive_sequence;
