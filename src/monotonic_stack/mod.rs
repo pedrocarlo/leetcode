@@ -1,2 +1,3 @@
 mod next_greater_element;
 mod most_competitive_sequence;
+mod smallest_subsequence_distinct_chars;
