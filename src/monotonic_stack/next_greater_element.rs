@@ -3,8 +3,10 @@
 
 use std::collections::HashMap;
 
+#[allow(dead_code)]
 struct Solution;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn next_greater_element(mut nums1: Vec<i32>, nums2: Vec<i32>) -> Vec<i32> {
         let mut stack = Vec::new();

@@ -1,8 +1,10 @@
 //! 1673. Find the Most Competitive Subsequence
 //!
 
+#[allow(dead_code)]
 struct Solution;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn most_competitive(nums: Vec<i32>, k: i32) -> Vec<i32> {
         let mut stack = Vec::new();

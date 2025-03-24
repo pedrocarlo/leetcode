@@ -30,10 +30,11 @@
 // 1 <= arr.length <= 5 * 104
 // 0 <= arr[i] <= 109
 
-use std::collections::{HashMap, HashSet, hash_set::Union};
+use std::collections::HashSet;
 
 struct Solution;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn subarray_bitwise_o_rs(arr: Vec<i32>) -> i32 {
         let mut ans: HashSet<i32> = HashSet::new();

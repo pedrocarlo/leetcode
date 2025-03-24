@@ -2,6 +2,7 @@ use std::collections::{HashMap, HashSet};
 
 struct Solution;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn smallest_subsequence(s: String) -> String {
         let mut stack: Vec<char> = vec![];

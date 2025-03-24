@@ -2,6 +2,7 @@ use std::collections::HashMap;
 
 struct Solution;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn subarray_sum(nums: Vec<i32>, k: i32) -> i32 {
         let mut subarrays = 0;
