@@ -5,3 +5,4 @@ mod next_greater_element;
 mod remove_nodes_from_linked_list;
 mod shortest_subarray_to_be_removed;
 mod smallest_subsequence_distinct_chars;
+mod remove_k_digits;
