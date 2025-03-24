@@ -3,3 +3,4 @@ mod most_competitive_sequence;
 mod next_greater_element;
 mod remove_nodes_from_linked_list;
 mod smallest_subsequence_distinct_chars;
+mod maximum_binary_tree;
