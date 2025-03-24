@@ -1,3 +1,4 @@
-mod next_greater_element;
+mod max_chunks_make_sorted;
 mod most_competitive_sequence;
+mod next_greater_element;
 mod smallest_subsequence_distinct_chars;
