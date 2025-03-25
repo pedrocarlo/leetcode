@@ -1,9 +1,10 @@
+mod append_k_integers_minimal_sum;
 mod max_chunks_make_sorted;
 mod maximum_binary_tree;
 mod most_competitive_sequence;
 mod next_greater_element;
+mod online_stock_span;
+mod remove_k_digits;
 mod remove_nodes_from_linked_list;
 mod shortest_subarray_to_be_removed;
 mod smallest_subsequence_distinct_chars;
-mod remove_k_digits;
-mod append_k_integers_minimal_sum;

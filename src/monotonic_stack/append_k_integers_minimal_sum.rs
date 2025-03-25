@@ -4,6 +4,7 @@ use std::collections::HashSet;
 
 struct Solution;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn minimal_k_sum(mut nums: Vec<i32>, mut k: i32) -> i64 {
         let mut sum = 0i64;
