@@ -42,7 +42,7 @@ mod tests {
 
     #[test]
     fn test2() {
-        let x = Solution::number_of_subarrays(vec![2,2,2,1,2,2,1,2,2,2], 2);
+        let x = Solution::number_of_subarrays(vec![2, 2, 2, 1, 2, 2, 1, 2, 2, 2], 2);
         assert_eq!(16, x);
     }
 }
