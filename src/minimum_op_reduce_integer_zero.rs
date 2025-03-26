@@ -2,6 +2,7 @@
 
 struct Solution;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn min_operations(mut n: i32) -> i32 {
         let mut count = 0;
