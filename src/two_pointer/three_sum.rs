@@ -4,6 +4,7 @@ use std::collections::{HashMap, HashSet};
 
 struct Solution;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn three_sum(mut nums: Vec<i32>) -> Vec<Vec<i32>> {
         nums.sort();
