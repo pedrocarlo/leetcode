@@ -18,3 +18,9 @@ def countStableSegments(self, capacity: List[int]) -> int:
                 res += 1
 
     return res
+
+# cap [9, 3, 3, 3, 9]
+# out 2
+
+# cap [9, 3, 1, 2, 3, 9, 10]
+# out 2
