@@ -13,7 +13,7 @@ def inorderTraversal(root: TreeNode) -> List[int]:
     if root is None:
         return list_items
     stack: list[TreeNode] = []
-    while root is not None or not stack:
+    while root is not None or stack:
         while root is not None:
             stack.append(root)
             root = root.left
