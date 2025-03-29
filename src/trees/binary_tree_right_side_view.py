@@ -11,6 +11,10 @@ class TreeNode:
         self.left: TreeNode | None = left
         self.right: TreeNode | None = right
 
+# The core idea of this algorithm:
+
+# 1.Each depth of the tree only select one node.
+# 2. View depth is current size of result list.
 
 class Solution:
     def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
