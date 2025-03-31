@@ -1,7 +1,7 @@
 # 543. Diameter of Binary Tree
 
 # Definition for a binary tree node.
-from typing import List, Optional
+from typing import Optional
 
 
 class TreeNode:
@@ -27,5 +27,6 @@ class Solution:
             res = max(res, left + right)
 
             return max(left, right) + 1
+
         inorder(root)
         return res
