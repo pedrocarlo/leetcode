@@ -1,7 +1,6 @@
 # https://www.fastprep.io/problems/citadel-get-recommended-friends
 
 from typing import List
-from collections import deque
 
 
 class Node:
@@ -21,7 +20,7 @@ class Solution:
         # max common ancestor
         def search_friend(root: int) -> int:
             freq: dict[int, int] = dict()
-            friends = adj[root].copy()
+            friends = adj[root]
 
             for friend in friends:
                 second_degree_friends = adj[friend]
