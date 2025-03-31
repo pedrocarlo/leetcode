@@ -1,34 +1,34 @@
-# 5. Longest Palindromic Substring
+# 647. Palindromic Substrings
 
 
 class Solution:
-    def longestPalindrome(self, s: str) -> str:
+    def countSubstrings(self, s: str) -> int:
         n = len(s)
         dp = [[False] * n for _ in range(n)]
-        ans = (0, 0)
+        ans = 0
 
+        # length 1 palindrome
         for i in range(n):
-            # Base case 1 sized is palindrome
             dp[i][i] = True
+            ans += 1
 
-        # Base case where length = 2 is palindrome
+        # len 2 palindrome
         for i in range(n - 1):
             if s[i] == s[i + 1]:
                 dp[i][i + 1] = True
-                ans = [i, i + 1]
+                ans += 1
 
-        # dp with length 3 palindrome and beyond
+        # stride in chunks of 3 or more
         for diff in range(2, n):
             for i in range(n - diff):
                 j = i + diff
                 if s[i] == s[j] and dp[i + 1][j - 1]:
+                    ans += 1
                     dp[i][j] = True
-                    ans = [i, j]
 
-        i, j = ans
-        return s[i : j + 1]
+        return ans
 
 
 sol = Solution()
-res = sol.longestPalindrome("babad")
+res = sol.countSubstrings("abc")
 print(res)
