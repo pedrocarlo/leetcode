@@ -22,9 +22,10 @@ class Solution:
         left = 0
         max_length = 0
         for right in range(len(userEvent)):
+            print(curr_freq)
             curr_freq[userEvent[right]] += 1
 
-            while left < right and not is_consistent(curr_freq):
+            while curr_freq[userEvent[right]] > min_freq:
                 curr_freq[userEvent[left]] -= 1
                 left += 1
 
@@ -35,9 +36,9 @@ class Solution:
 
 
 sol = Solution()
-# res = sol.findConsistentLogs([1, 2, 1, 3, 4, 2, 4, 3, 3, 4])
-# # 8
-# print(res)
+res = sol.findConsistentLogs([1, 2, 1, 3, 4, 2, 4, 3, 3, 4])
+# 8
+print(res)
 
 res = sol.findConsistentLogs([1, 2, 1, 3, 4, 4, 3, 3, 4, 1])
 # 4
