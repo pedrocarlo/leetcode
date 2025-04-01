@@ -13,7 +13,6 @@ class Solution:
             return 0
         dp = [0] * (n + 1)
         dp[1] = power[0]
-        dp[2] = max(power[0], power[1])
 
         for i in range(1, n):
             dp[i + 1] = max(dp[i - 1] + power[i], dp[i])
